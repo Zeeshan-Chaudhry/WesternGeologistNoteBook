@@ -1,24 +1,32 @@
-//
-//  ContentView.swift
-//  Western_Geologist_NoteBook
-//
-//  Created by Zeeshan Chaudhry on 2024-11-08.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                Text("Welcome to ContentView")
+                    .font(.title)
+                    .padding()
+                
+                NavigationLink(destination: PDFView()) {
+                    Text("Show PDF View")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.orange)
+                        .cornerRadius(8)
+                }
+            }
+            .navigationTitle("Content View")
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+    
+    #Preview{
+        ContentView();
+    }
 }
