@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B3926B7D2D1929F5006E4D26 /* TextNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3926B7C2D1929EB006E4D26 /* TextNotesView.swift */; };
+		B3926B7F2D19317E006E4D26 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3926B7E2D19317E006E4D26 /* Note.swift */; };
+		B3926B812D1931A3006E4D26 /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3926B802D19318E006E4D26 /* AddNoteView.swift */; };
+		B3926B832D19329E006E4D26 /* TrashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3926B822D19329B006E4D26 /* TrashView.swift */; };
+		B3926B852D19332E006E4D26 /* StickyNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3926B842D19332E006E4D26 /* StickyNoteView.swift */; };
+		B3926B872D1934D7006E4D26 /* EditNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3926B862D1934D1006E4D26 /* EditNotesView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B345A1EF2CDEB7AC00FBE434 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +36,13 @@
 		B345A1DE2CDEB7A900FBE434 /* Western_Geologist_NoteBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Western_Geologist_NoteBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B345A1EE2CDEB7AC00FBE434 /* Western_Geologist_NoteBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Western_Geologist_NoteBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B345A1F82CDEB7AC00FBE434 /* Western_Geologist_NoteBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Western_Geologist_NoteBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3926B792D192906006E4D26 /* Western_Geologist_NoteBook.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Western_Geologist_NoteBook.xcodeproj; sourceTree = SOURCE_ROOT; };
+		B3926B7C2D1929EB006E4D26 /* TextNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNotesView.swift; sourceTree = "<group>"; };
+		B3926B7E2D19317E006E4D26 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		B3926B802D19318E006E4D26 /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
+		B3926B822D19329B006E4D26 /* TrashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashView.swift; sourceTree = "<group>"; };
+		B3926B842D19332E006E4D26 /* StickyNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyNoteView.swift; sourceTree = "<group>"; };
+		B3926B862D1934D1006E4D26 /* EditNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNotesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,10 +91,17 @@
 		B345A1D52CDEB7A900FBE434 = {
 			isa = PBXGroup;
 			children = (
+				B3926B842D19332E006E4D26 /* StickyNoteView.swift */,
+				B3926B7E2D19317E006E4D26 /* Note.swift */,
+				B3926B802D19318E006E4D26 /* AddNoteView.swift */,
+				B3926B822D19329B006E4D26 /* TrashView.swift */,
+				B3926B792D192906006E4D26 /* Western_Geologist_NoteBook.xcodeproj */,
 				B345A1E02CDEB7A900FBE434 /* Western_Geologist_NoteBook */,
 				B345A1F12CDEB7AC00FBE434 /* Western_Geologist_NoteBookTests */,
 				B345A1FB2CDEB7AC00FBE434 /* Western_Geologist_NoteBookUITests */,
 				B345A1DF2CDEB7A900FBE434 /* Products */,
+				B3926B7C2D1929EB006E4D26 /* TextNotesView.swift */,
+				B3926B862D1934D1006E4D26 /* EditNotesView.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +112,11 @@
 				B345A1EE2CDEB7AC00FBE434 /* Western_Geologist_NoteBookTests.xctest */,
 				B345A1F82CDEB7AC00FBE434 /* Western_Geologist_NoteBookUITests.xctest */,
 			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3E2D3132D1F2F8A00D0FF42 /* Products */ = {
+			isa = PBXGroup;
 			name = Products;
 			sourceTree = "<group>";
 		};
@@ -198,6 +226,12 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B345A1DF2CDEB7A900FBE434 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B3E2D3132D1F2F8A00D0FF42 /* Products */;
+					ProjectRef = B3926B792D192906006E4D26 /* Western_Geologist_NoteBook.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B345A1DD2CDEB7A900FBE434 /* Western_Geologist_NoteBook */,
@@ -236,6 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3926B852D19332E006E4D26 /* StickyNoteView.swift in Sources */,
+				B3926B872D1934D7006E4D26 /* EditNotesView.swift in Sources */,
+				B3926B7D2D1929F5006E4D26 /* TextNotesView.swift in Sources */,
+				B3926B7F2D19317E006E4D26 /* Note.swift in Sources */,
+				B3926B812D1931A3006E4D26 /* AddNoteView.swift in Sources */,
+				B3926B832D19329E006E4D26 /* TrashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
